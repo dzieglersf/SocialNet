@@ -12,13 +12,13 @@ define(['text!templates/register.html'], function(registerTemplate) {
                 email: $('input[name=email]').val(),
                 password: $('input[name=password]').val()
             }, function(data) {
-                console.log(date);
+                console.log(data);
             });
             return false;
         },
 
         render: function() {
-            this.$el.html.(registerTemplate);
+            this.$el.html(registerTemplate);
         }
     });
 

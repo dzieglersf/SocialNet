@@ -17,9 +17,9 @@ define(['router'], function(router) {
 
     var runApplication = function(authenticated) {
         if (!authenticated) {
-            this.window.location = 'login';
+            this.window.location.hash = 'login';
         } else {
-            this.window.location = 'index';
+            this.window.location.hash = 'index';
         };
         Backbone.history.start();
     };
